@@ -1,8 +1,5 @@
 header {
-    background-image: url(../img/pencil-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 600px;
+    background-color: #C3BCC2;
     padding: 1.5em;
 }
 
@@ -14,4 +11,49 @@ header h1 {
 header p {
     font-size: 200%;
     font-weight: 300;
+}
+
+.bunny img {
+    float: left;
+    max-height: 200px;
+    margin-right: 1em;
+}
+
+.bunny aside {
+    font-size: 200%;
+    font-weight: 100;
+    margin-left: 1em;
+}
+
+.bunny p {
+    clear: both;
+}
+
+.container img {
+    max-height: 75px;
+}
+
+.container {
+    margin: 1.5em;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    header {
+        background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0)), url(../img/pencil-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 600px;    
+    }
+}
+
+footer {
+    clear: both;
+}
+
+@media (min-width: 923px) {
+    
 }
