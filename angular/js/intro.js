@@ -25,7 +25,8 @@ angular.module('AngularIntro', [])
     //with a particular name. here we are asking for the `$scope` service,
     //which lets us add models to the scope, which we can refer to in
     //template expressions in the HTML file
-    .controller('NameController', function($scope) {
+    .controller('NameController', function($scope) { //construction function
+        // has to be called $scope --> scope object, automatically knows to make it view in the HTML
         'use strict'; //strict mode
 
         //$scope is an object and any property we add to it will be
@@ -33,5 +34,5 @@ angular.module('AngularIntro', [])
         //try changing this value to something else, and refresh
         //the page to see how the default value of the model is
         //automatically shown in the view on page load
-        $scope.name = null;
+        $scope.name = "Cindy";
     });
