@@ -1,0 +1,32 @@
+<h1>Edit {{contact.fname}} {{contact.lname}}</h1>
+
+<form name="contactForm" novalidate ng-submit="save()">
+    <div class="form-group">
+        <label for="fnameImp">First Name:</label>
+        <input type="text" class="form-control" id="fnameImp"
+            name="fnameImp" ng-model="contact.fname" required />
+        <p class="validation-error" 
+            ng-if="contactForm.fnameImp.$error.required">First name is required</p>
+    </div>
+    <div class="form-group">
+        <label for="lnameImp">Last Name:</label>
+        <input type="text" class="form-control" id="lnameImp"
+            name="lnameImp" ng-model="contact.lname" />
+    </div>
+    <div class="form-group">
+        <label for="phoneImp">Cell Phone</label>
+        <input type="text" class="form-control" id="phoneImp"
+            name="phoneImp" ng-model="contact.phone" 
+            pattern="" />
+    </div>
+    <div class="form-group">
+        <label for="dobImp">Date of Birth:</label>
+        <input type="text" class="form-control" id="dobImp"
+            name="dobImp" ng-model="contact.dob" />
+    </div>
+    <div class="form-group">
+        <a class="btn btn-default" ui-sref="list" 
+            ng-disable="contactForm.$invalid">Cancel</a>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
