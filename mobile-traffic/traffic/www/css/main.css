@@ -1,0 +1,73 @@
+/* add your CSS rules here */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+
+img {
+	width: 250px;
+	margin-top: 1em;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+#map {
+    height: 100%;
+}
+
+.filter {
+	z-index: 4;
+	width: 22%;
+	height: 100%;
+	position: fixed;
+	margin: 0 auto;
+	background-color: rgba(255,255,255, 0.8);
+}
+
+.labeling {
+	font-size: 20px;
+}
+
+#SDOTPop {
+	text-decoration: none;
+}
+
+#SDOTPop {
+	text-align: center;
+	font-size: 15px;
+	font-style: bold;
+	color: 'red';
+}
+
+.filter h1 {
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+.filter p {
+	width: 75%;
+	margin: 0 auto;
+}
+
+#SDOT, #WSDOT {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+#SDOT {
+	margin-top: 1em;
+	color: #4CA64C;
+}
+
+#WSDOT {
+	margin-bottom: 1.5em;
+	color: #9999FF;
+}
